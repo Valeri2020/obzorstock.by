@@ -216,10 +216,21 @@ color: #FFFFFF;
     line-height: 140%;
 }
 .welcome__title span {
- color: rgba(255, 101, 195, 1);
+    color: rgba(255, 101, 195, 1);
 }
+
+.welcome__title a {
+    color: black;
+    text-decoration: underline;
+    transition: all 0.3s ease 0s;
+}
+
+.welcome__title a:hover {
+    color: rgba(255, 101, 195, 1);
+}
+
 .welcome__subtitle {
-text-align: center;
+    text-align: center;
 }
 
 
@@ -307,7 +318,7 @@ margin-bottom: 40px;
 	font-size: 36px;
 	line-height: 45px;
 	color: #232E35;
-    max-width: 700px;
+    max-width: 700px;._tab-active
 }
 
 .tabs {
@@ -329,11 +340,13 @@ color: #232E35;
 padding: 16px 32px;
 width: 281px;
 text-align: left;
+font-family: 'Montserrat';
 }
 ._tab-active {
 	color: rgba(255, 101, 195, 1);
 	background-color: rgba(163, 410, 188, 0.32);
-border-radius: 4px;
+    border-radius: 4px;
+    font-family: 'Montserrat';
 }
 
 
@@ -496,6 +509,7 @@ width: 100%;
 .card-brands__title {
     font-size: 20px;
     font-weight: 700;
+    padding: 0 15px;
 }
 .card-brands__title a {
    color: rgba(255, 101, 195, 1);
@@ -516,6 +530,7 @@ padding: 5px;
     display: block;
 margin-bottom: 15px;
 line-height: 30px;
+padding: 0 15px;
 }
 
 .card-brands__text span {
@@ -594,7 +609,7 @@ font-weight: 400;
     line-height: 1.2;
 }
 .card-brands__text {
-line-height: 20px;
+    line-height: 20px;
 }
 
 .card-brands__text span {
@@ -749,7 +764,9 @@ justify-content: center;
 	cursor: pointer;
 }
 .block._init .block__title {
-	padding: 10px 40px 10px 10px;
+	padding: 10px 40px 10px 15px;
+    font-family: 'Montserrat';
+    font-size: 20px;
 }
 .block._init .block__title::before,
 .block._init .block__title::after {
@@ -769,8 +786,8 @@ justify-content: center;
 	transform: rotate(0deg);
 }
 .block__text {
-	padding: 0 10px 10px;
-	line-height: 130%;
+	padding: 0 15px 10px;
+	line-height: 30px;
 }
 
 /*===================================================*/
@@ -789,8 +806,7 @@ justify-content: center;
  .footer__logos {
     flex: 0 1 50%;
     display: flex;
-    justify-content: flex-end;
-   
+    justify-content: flex-start;
  }
 
  
